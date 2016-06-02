@@ -5,6 +5,9 @@
  */
 package easyrad;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 /**
  *
  * @author Usuario
@@ -13,10 +16,12 @@ public class EasyRad {
 
     /**
      * @param args the command line arguments
+     * @throws java.net.MalformedURLException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
         Main m = new Main();
         m.setVisible(true);
+        m.showPage(new URL("FormBuilder/index.hml"));
     }
     
 }
